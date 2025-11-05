@@ -76,7 +76,7 @@ export default function Home() {
                   src="/clchc-logo.webp"
                   alt="Project screenshot"
                   fill
-                  className="object-fit scale-80" 
+                  className="object-contain scale-80" 
                 />
               </div>
               
@@ -121,10 +121,10 @@ export default function Home() {
               {/* Image */}
               <div className="relative h-56 bg-muted overflow-hidden">
                 <Image
-                  src="/center-stage-dance-studio-logo.png"
+                  src="/center-stage-no-bg.png"
                   alt="Project screenshot"
                   fill
-                  className="object-cover scale-75" 
+                  className="object-contain scale-75" 
                 />
               </div>
               
