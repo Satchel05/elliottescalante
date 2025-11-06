@@ -13,7 +13,7 @@ export default function Home() {
         <section className="min-h-[60vh] flex flex-col justify-center items-center px-4 py-16">
           {/* <div className="max-w-3xl text-center"> */}
             <div className="flex flex-wrap flex-col items-start">
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-linear-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
                 Elliott Escalante
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-2">
@@ -24,7 +24,7 @@ export default function Home() {
               </p>
             {/* </div> */}
             
-            <div className="flex flex-wrap gap-3 justify-center">
+            <div className="sm:flex sm:flex-row sm:flex-wrap sm:gap-3 sm:justify-center sm:border-4 flex flex-col flex-wrap gap-3">
               <Button asChild size="lg">
                 <a href="#projects">View Projects</a>
               </Button>
@@ -34,16 +34,34 @@ export default function Home() {
                   Contact
                 </a>
               </Button>
-              <Button variant="ghost" size="lg" asChild>
-                <a href="https://github.com/Satchel05" target="_blank">
-                  <Github className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant="ghost" size="lg" asChild>
-                <a href="https://www.linkedin.com/in/elliott-escalante-97510324a/" target="_blank">
-                  <Linkedin className="h-5 w-5" />
-                </a>
-              </Button>
+              <div className="flex justify-center">
+                <div className="sm:block hidden">
+                    <Button variant="ghost" size="lg" asChild>
+                      <a href="https://github.com/Satchel05" target="_blank">
+                        <Github className="h-5 w-5" />
+                      </a>
+                    </Button>
+                    <Button variant="ghost" size="lg" asChild>
+                      <a href="https://www.linkedin.com/in/elliott-escalante-97510324a/" target="_blank">
+                        <Linkedin className="h-5 w-5" />
+                      </a>
+                  </Button>
+                </div>
+                <div className="sm:hidden flex gap-2">
+                  <Button variant="outline" size="lg" asChild>
+                  <a href="https://github.com/Satchel05" target="_blank">
+                    <Github className="mr-2 h-4 w-4" />
+                    GitHub
+                  </a>
+                </Button>
+                <Button variant="outline" size="lg" asChild>
+                  <a href="https://www.linkedin.com/in/elliott-escalante-97510324a/" target="_blank">
+                    <Linkedin className="mr-2 h-4 w-4" />
+                    LinkedIn
+                  </a>
+                </Button>
+              </div>
+              </div>
             </div>
           </div>
         </section>
