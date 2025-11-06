@@ -24,7 +24,7 @@ export default function Home() {
               </p>
             {/* </div> */}
             
-            <div className="sm:flex sm:flex-row sm:flex-wrap sm:gap-3 sm:justify-center sm:border-4 flex flex-col flex-wrap gap-3">
+            <div className="sm:flex sm:flex-row sm:flex-wrap sm:gap-3 sm:justify-center flex flex-col flex-wrap gap-3">
               <Button asChild size="lg">
                 <a href="#projects">View Projects</a>
               </Button>
